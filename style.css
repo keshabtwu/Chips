@@ -17,6 +17,7 @@
     background-color: #ffffff;
     position: relative;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    z-index: 10000;
   }
   .navbar .nav-header{
     display: inline;
@@ -220,7 +221,7 @@
 
  .product .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2rem;
   }
   
@@ -231,6 +232,7 @@
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    height: 100%;
   }
   
   .product .box-container .box .image{
@@ -240,7 +242,7 @@
   }
   
   .product .box-container .box .image img{
-    height: 100%;
+    height: 65%;
     width: 100%;
     border-radius: .5rem;
     object-fit: cover;
@@ -248,18 +250,19 @@
   
   .product .box-container .box .content{
     padding: 2rem;
-    padding-top: 0;
+    padding-top: 3rem;
+    margin-top: -15rem;
   }
   
   .product .box-container .box .content h3{
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
   .product .box-container .box .content .price{
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
   }
   
@@ -268,7 +271,7 @@
   }
   
   .product .box-container .box .content .stars i{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: var(--secondary);
   }
   
@@ -342,7 +345,7 @@
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: #0381fe;
+    background-color: rgb(243, 230, 48);
   }
   
   .contact_us_2 .responsive-container-block {
@@ -489,7 +492,7 @@
   
   .contact_us_2 .submit-btn {
     width: 98%;
-    background-color: #03a9f4;
+    background-color: rgb(243, 230, 48);
     height: 60px;
     font-size: 20px;
     font-weight: 700;
@@ -564,7 +567,7 @@
     left: 0px;
     top: 0px;
     height: 300px;
-    background-color: #03a9f4;
+    background-color: rgb(243, 230, 48);
   }
   
   @media (max-width: 768px) {
@@ -682,7 +685,7 @@
 
 /* footer section ends here*/
 .footer{
-    background: #fff;
+    background: #ffc800;
     font-weight: 500;
   }
   
@@ -737,6 +740,7 @@
     margin-right: .2rem;
     background: #eee;
     text-align: center;
+    padding-top: 1.7rem;
   }
   
   .footer .box-container .box .share a:hover{
